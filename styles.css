@@ -1,0 +1,125 @@
+:root{
+    font-size: 62.5%;
+}
+*,*::before,*::after{
+    box-sizing: border-box;
+}
+img{
+    width: 100%;
+}
+body{
+font-family:'Red Hat Display',sans-serif;
+background-image:url(images/pattern-background-mobile.svg) ;
+background-repeat:no-repeat ;
+background-size:contain ;
+background-color: rgb(224,232,255);
+height: 150vh;
+font-size: 1.7rem;
+
+}
+.detail{
+    text-transform:capitalize ;
+    font-weight: 700;
+    color: hsl(223, 47%, 23%);
+}
+.detail_des{
+    color:  hsl(224, 23%, 55%);
+    font-weight: 400;
+    font-size: 1.4rem;
+}
+@media screen and (min-width:700px){
+body{
+    background-image: url(images/pattern-background-desktop.svg);
+    background-size: contain;
+background-color: rgb(224,232,255);}
+}
+img{
+    width:100%
+}
+.pic{
+    object-fit: cover;
+}
+.card{
+    max-width: 34rem;
+    margin:  6rem auto ;
+    text-align: center;
+    border-radius: 14px;
+    overflow: hidden;
+}
+.plan{
+    display: flex;
+    border-radius: 8px;
+    width: 100%;
+    position: relative;
+    justify-content:space-between;
+    padding: 0 1rem;
+    background-color: rgba(233, 234, 240, 0.6);
+    align-items: center;
+    font-size: small;
+    padding: 1rem;
+    
+}
+.icon{
+    width: 4rem;
+    align-self: center;
+}
+.content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    padding: 0 1rem;
+    padding-bottom: 3rem;
+
+    background-color: white;
+}
+.main{
+font-size: 1.1rem;
+font-weight: 700;
+margin-top: 3rem;
+position: relative;
+top: 1rem;
+
+color: rgb(33, 49, 98);
+}
+.rate{
+    font-size: 1rem;
+    align-self: flex-start;
+    margin-bottom: 3rem;
+    position: relative;
+    bottom: 0.5rem;
+    color: rgb(107, 113, 137);
+}
+.plan-rate{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content:flex-start;
+    position: absolute;
+    left: 6rem;
+}
+.can{
+color: rgb(114, 116, 121);
+  font-size: small;
+  align-self: flex-end;
+
+}
+.can:hover{
+    font-weight:500 ;
+    color: black;
+}
+button{
+    background-color:rgb(56,46,204);
+    outline: 0;
+    border: 0;
+    color: white;
+    padding: 1rem 5rem;
+    border-radius: 10px;
+}
+button:hover{
+    cursor: pointer;
+    background-color:rgb(90, 83, 195);
+
+}
+
